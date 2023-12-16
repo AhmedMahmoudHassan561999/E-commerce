@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Css/Register.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a class="brand" href="Index.html">Shop</a>
+
+                <nav>
+                    <ul>
+                        <li><a class="link" href="login.html">Sign in</a></li>
+                        <li><a class="link" href="Register.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-form">
+        <div>
+            <h1>Sign Up</h1>
+            <form action="">
+
+                <div class="names">
+                    <div>
+                        <label for="">First Name</label><br>
+                        <input type="text" required placeholder="Enter Your First Name" id="f_name">
+                    </div>
+                    <div>
+                        <label for="">Last Name</label><br>
+                        <input type="text" required placeholder="Enter Your Last Name">
+                    </div>
+                </div>
+
+            </form>
+
+            <form action="" class="login-form" novalidate>
+                <label for="">User Name</label>
+                <input type="text" required placeholder="Enter Your User Name" id="username">
+
+                <label for="">Password</label>
+                <input type="password" required placeholder="Enter Your Password" id="password">
+
+                <label for="">Repeat Password</label>
+                <input type="password" required placeholder="Enter Your Password Again" id="repassword">
+
+                <label for="userType">Select User Type:</label>
+                <select id="userType" name="userType">
+                    <option value="Customer">Customer</option>
+                    <option value="Admin">Admin</option>
+                </select>
+
+                <input class="subb" type="submit" value="Sign Up" id="submit_btn">
+                <br>
+                <hr><br>
+                <a href="login.html">Already have an account</a>
+            </form>
+        </div>
+    </section>
+
+    <script src="Js/Register.js"></script>
+    <script src="Js/navbar.js"></script>
+</body>
+
+</html>

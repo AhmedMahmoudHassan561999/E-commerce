@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Css/Style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="" alt="">
+        <div class="containerByMe">
+            <div class="header-contentByMe">
+                <a class="brand" href="Index.html">Shop</a>
+
+                <div>
+                    <input type="search" id="query" name="q" placeholder="Search..."
+                        aria-label="Search through site content">
+                    <button id="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="brown"="black" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg></button>
+                </div>
+
+                <div class="nava">
+                    <ul id="links">
+                        <li><a class="link" href="login.html">Sign in</a></li>
+                        <li><a class="link" href="Register.html">Sign Up</a></li>
+                    </ul>
+                    <!-- <ul id="user-pages">
+                        <li><a href="E-commerce_project-dev/products.html" id="profile"></a></li>
+                        <li>
+                            <a href="#">| Cart <i class="fa-solid fa-cart-shopping"></i>
+                                <span style="margin-left: 2px;" class="badge"></span> |</a>
+                        </li>
+                        <li><a href="" id="logout">Log out</a></li>
+                    </ul>
+                    <ul id="admin-pages">
+                        <li><a href="products.html" id="products-page">Products</a></li>
+                        <li><a href="E-commerce_project-dev/ordercustomer.html" id="orders">Orders</a></li>
+                        <li><a href="" id="logout">Log out</a></li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-form">
+        <div>
+            <h1>Sign In</h1>
+            <form action="" class="login-form" novalidate>
+                <label for="">User Name</label>
+                <input type="text" id="username" required placeholder="Enter Your User Name">
+
+                <label for="">Password</label>
+                <input type="password" id="password" required placeholder="Enter Your Password">
+
+                <input class="subb" id="loginBtn" type="submit" value="Sign In">
+                <br>
+                <hr><br>
+                <a href="Register.html">Create New account</a>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="Js/login.js"></script>
+    <script src="Js/navbar.js"></script>
+</body>
+
+</html>

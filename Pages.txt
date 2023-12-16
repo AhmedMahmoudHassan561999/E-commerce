@@ -1,0 +1,18 @@
+1.login register
+
+2.home for admin
+
+3.products
+
+4.orders
+
+5.home for user
+
+6.my cart
+
+7.whishlist
+
+8.order for user
+
+
+

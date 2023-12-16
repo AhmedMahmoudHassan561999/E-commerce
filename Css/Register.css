@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Fjalla One', sans-serif; */
+    font-family: 'Barlow', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: brown;
+    padding: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.brand {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    margin: 0 5px;
+    font-size: 25px;
+}
+
+/* =================== Form ========================== */
+
+.names {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.names div {
+    width: 100%;
+}
+
+.names label {
+    font-size: 25px;
+}
+
+.names input {
+    padding: 20px;
+    font-size: 25px;
+    width: 80%;
+    margin-right: 10px;
+    border: 2px solid rgb(224, 218, 218);
+}
+
+
+/* ================================ */
+.section-form {
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background-color: bisque;
+}
+
+.section-form a {
+    text-align: center;
+    text-decoration: none;
+    color: brown;
+    font-size: 25px;
+    margin-left: 35%;
+}
+
+.section-form h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: brown;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-form {
+    padding: 20px;
+    margin-top: -30px;
+}
+
+#userType {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.login-form label {
+    font-size: 25px;
+}
+
+.login-form input {
+    padding: 25px;
+    display: block;
+    font-size: 25px;
+    margin: 5px 0;
+    width: 100%;
+    border: 2px solid rgb(224, 218, 218);
+}
+
+.section-form form input[type="submit"] {
+    margin-top: 15px;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+}

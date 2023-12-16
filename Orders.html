@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ordercustomer</title>
+  
+    <link rel="stylesheet" href="styles/css/all.min.css">
+    <link rel="stylesheet" href="Css/Orders.css">
+    <link rel="stylesheet" href="Css/Style.css">
+
+</head>
+
+<body>
+
+    
+
+    <div class="container">
+        <header>
+            <div class="containerByMe">
+                <div class="header-contentByMe">
+                    <a class="brand" href="Index.html">Shop</a>
+    
+                    <div>
+                        <input type="search" id="query" name="q" placeholder="Search..."
+                            aria-label="Search through site content">
+                        <!-- <button id="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="brown"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg></button> -->
+                    </div>
+    
+                    <div class="nava">
+                        <ul id="links">
+                            <li><a class="link" href="login.html">Sign in</a></li>
+                            <li><a class="link" href="Register.html">Sign Up</a></li>
+                        </ul>
+                        <ul id="user-pages">
+                            <li><a href="E-commerce_project-dev/products.html" id="profile"></a></li>
+                            <li><a href="myWishlist.html" id="whishlist">Whishlist</a></li>
+                            <li>
+                                <a href="Cart.html">| Cart <i class="fa-solid fa-cart-shopping"></i>
+                                    <span style="margin-left: 2px;" class="badge"></span> |</a>
+                            </li>
+                            <li><a href="" id="logoutC">Log out</a></li>
+                        </ul>
+                        <ul id="admin-pages">
+                            <li><a href="products.html" id="products-page">Products</a></li>
+                            <li><a href="Orders.html" id="orders">Orders</a></li>
+                            <li><a href="" id="logoutA">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <h1>Products Orsders</h1>
+
+        <section id="products">
+            <div>
+
+                <img src="images/1.png" alt="notfound">
+                <p>3dPrinter Machine</p>
+                <p>3500 L.E</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <img src="images/240_F_130990187_nxSLxKmKgt0ozMZExLbxLUbXl9LuXo0B.jpg" alt="">
+                <p>3dPrinter Machine</p>
+                <p>3500 L.E</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <img src="images/240_F_143344814_Dt1D6WPsmIa8SBYzVCM8px7QR1DIDM6H.jpg" alt="">
+                <p>3dPrinter Machine</p>
+                <p>3500 L.E</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <img src="images/240_F_181329782_kY3CH4MbwUJtqncjwH2uViah6w3JfvTG.jpg" alt="">
+                <p>3dPrinter Machine</p>
+                <p>3500 L.E</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <img src="images/240_F_128955720_QT4fJHpUF0sXDeyp6jCGjZcJYFyspJ86.jpg" alt="">
+                <p>3dPrinter Machine</p>
+                <p>3500 L.E</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <img src="images/240_F_248686803_HapQrSaI0UmlZq1XOp4Zg7YOa7hYWwFd.jpg" alt="">
+                <p>3dPrinter Machine</p>
+                <p>3500 L.E</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <img src="images/240_F_128955720_QT4fJHpUF0sXDeyp6jCGjZcJYFyspJ86.jpg" alt="">
+                <p>3dPrinter Machine</p>
+                <p>3500 L.E</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <img src="images/240_F_248686803_HapQrSaI0UmlZq1XOp4Zg7YOa7hYWwFd.jpg" alt="">
+                <p>3dPrinter Machine</p>
+                <p>3500 L.E</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+
+
+        </section>
+
+        <div id="Show_stateproduct">
+
+        </div>
+        <div>
+            <h1>Products Orders</h1>
+        </div>
+        <div id="tabelorderproduct">
+            <table id="all_products" style="width: 100%;">
+                <tr>
+                    <th> ID</th>
+                    <th> Name</th>
+                    <th> Category</th>
+                    <th> Description</th>
+                    <th> Price</th>
+                    <th> Quentity</th>
+                    <th>Accept</th>
+                    <th>Rject</th>
+
+                </tr>
+                <tbody id="datatable">
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    
+    <script src="Js/Orders.js"></script>
+    <script src="Js/navbar.js"></script>
+</body>
+
+</html>

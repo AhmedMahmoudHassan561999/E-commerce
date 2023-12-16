@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="Css/products.css">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="" alt="">
+            <div class="containerByMe">
+                <div class="header-contentByMe">
+                    <a class="brand" href="Index.html">Shop</a>
+                    <div class="nava">
+                        <ul id="links">
+                            <li><a class="link" href="login.html">Sign in</a></li>
+                            <li><a class="link" href="Register.html">Sign Up</a></li>
+                        </ul>
+                        <ul id="user-pages">
+                            <li><a href="E-commerce_project-dev/products.html" id="profile"></a></li>
+                            <li>
+                                <a href="Cart.html">| Cart <i class="fa-solid fa-cart-shopping"></i>
+                                    <span style="margin-left: 2px;" class="badge"></span> |</a>
+                            </li>
+                            <li><a href="" id="logoutC">Log out</a></li>
+                        </ul>
+                        <ul id="admin-pages">
+                            <li><a href="products.html" id="products-page">Products</a></li>
+                            <li><a href="Orders.html" id="orders">Orders</a></li>
+                            <li><a href="" id="logoutA">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+
+
+            <div>
+                <!-- <label for="name">Name product</label><br> -->
+                <input type="number" id="ID" name="ID" placeholder="ID">
+                <input type="text" id="name" name="namproduct" placeholder="Name Product">
+            </div>
+            <div class="img">
+                <!-- <label for="image">Image Product</label><br> -->
+                <input type="file" id="image" name="imageproduct" accept="image/*" placeholder="Image Prduct" multiple>
+
+                <!-- <label for="category">Category</label><br> -->
+            </div>
+
+            <div class="price_quentity_cate">
+                <input type="text" id="category" name="category" placeholder="category">
+
+                <input type="number" id="price" name="price" placeholder="Price">
+
+                <input type="number" name="quentitiy" id="quentity" placeholder="Quentity">
+            </div>
+
+            <div>
+                <textarea name="description" id="description" cols="20" rows="5" maxlength="2000"
+                    placeholder="Description for product"></textarea>
+            </div>
+
+            <div>
+                <!-- <input id="submit" type="submit" name="save" value="Create" onclick="createproduct()" > -->
+                <button id="submit" onclick="createproduct()">Create</button>
+            </div>
+        </section>
+
+
+        <div id="deleteall"> </div>
+
+        <div id="tableshowproducts">
+            <table id="all_products" style="width: 100%;">
+                <tr>
+                    <th> ID</th>
+                    <th> Name</th>
+                    <th> Category</th>
+                    <th> Description</th>
+                    <th> Price</th>
+                    <th> Quentity</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+
+                </tr>
+                <tbody id="datatable">
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <div class="parttwo">
+        <button id="viwproductpage"><a href="viewproduct.html">click to view</a></button>
+    </div>
+
+    <script src="Js/products.js"></script>
+    <script src="Js/navbar.js"></script>
+
+</body>
+
+</html>
