@@ -4,7 +4,7 @@ let productsInCart = localStorage.getItem('productsInCart');
 
 var CartDOM = document.getElementById("cart");
 var productInCart_object = JSON.parse(localStorage.productsInCart);
-console.log(productInCart_object);
+//console.log(productInCart_object);
 
 function displayCartProducts() {
 
@@ -17,7 +17,7 @@ function displayCartProducts() {
                 <h5 class="card-title">${item.namep}</h5>
                 <h3 class="card-text">${item.price}$</h3>
                 <p>${item.description}</p>
-                <button class="addToCart" id="cartBtn" onclick="RemoveFromCart(${item.id})">Remove From Cart</button>
+                <button class="addToCart" id="cartBtn" onclick="RemoveFromCart(${item.ID})">Remove From Cart</button>
             </div>
         </div>
         `
@@ -33,6 +33,12 @@ function RemoveFromCart(id) {
         let items = productInCart_object;
         let RemovedProduct = productInCart_object.find((item) => item.ID == id);
         console.log(RemovedProduct);
+
+
+
+        productInCart_object.splice(id, 1);
+        localStorage.productsInCart = JSON.stringify(productInCart_object);
+        displayCartProducts();
         // let filtered = items.filter((item) => item.ID !== id);
         // displayCartProducts(filtered);
         // console.log(filtered);
