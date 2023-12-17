@@ -6,9 +6,10 @@
 let productsInWhish = localStorage.getItem('whish_list');
 
 var whishDOM = document.getElementById("whishlistDiv");
-var productsInWhish_object = JSON.parse(localStorage.whish_list);
+var  productsInWhish_object = JSON.parse(localStorage.whish_list); 
 
 function displayWhishListProducts() {
+   
 
     let productuiW = productsInWhish_object.map((item) => {
         return `
@@ -26,6 +27,7 @@ function displayWhishListProducts() {
         </div>
         `
     })
+
     whishDOM.innerHTML = productuiW.join("");
 
 }
@@ -39,7 +41,7 @@ var product_object = JSON.parse(localStorage.product);
 function addedToCart(id) {
     if (first_name) {
         let AddedProduct = product_object.find((item) => item.ID == id);
-        console.log(AddedProduct);
+        //console.log(AddedProduct);
         inCart = [...inCart, AddedProduct];
         localStorage.setItem('productsInCart', JSON.stringify(inCart));
 
@@ -55,12 +57,15 @@ function addedToCart(id) {
 
     
 }
+// productInCart_object.splice(id, 1);
+// localStorage.productsInCart = JSON.stringify(productInCart_object);
+// displayCartProducts();
 
 function deleteproduct(id) {
-    let RemovedProduct = product_object.find((item) => item.ID == id);
-    wishlist.splice(i, 1);
-    localStorage.wish_list = JSON.stringify(wishlist);
-    viewdatawishlist();
+    let RemovedProduct = productsInWhish_object.find((item) => item.ID == id);
+    productsInWhish_object.splice(id, 1);
+    localStorage.whish_list = JSON.stringify(productsInWhish_object);
+    displayWhishListProducts();
 }
 
 

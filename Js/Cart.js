@@ -32,13 +32,11 @@ function RemoveFromCart(id) {
     if (productsInCart) {
         let items = productInCart_object;
         let RemovedProduct = productInCart_object.find((item) => item.ID == id);
-        console.log(RemovedProduct);
-
-
 
         productInCart_object.splice(id, 1);
         localStorage.productsInCart = JSON.stringify(productInCart_object);
         displayCartProducts();
+        
         // let filtered = items.filter((item) => item.ID !== id);
         // displayCartProducts(filtered);
         // console.log(filtered);
