@@ -9,9 +9,11 @@ var whishDOM = document.getElementById("whishlistDiv");
 var  productsInWhish_object = JSON.parse(localStorage.whish_list); 
 
 function displayWhishListProducts() {
-   
+    let productuiW ='';
+if(localStorage.whish_list!=null){
 
-    let productuiW = productsInWhish_object.map((item) => {
+
+      productuiW = productsInWhish_object.map((item) => {
         return `
         <div id="product_item" class="col-lg-8">
             <img src="${item.image}" class="product-item-img" alt="tablet image">
@@ -28,6 +30,10 @@ function displayWhishListProducts() {
         `
     })
 
+        }else{
+    productsInWhish_object=[];
+        }
+        
     whishDOM.innerHTML = productuiW.join("");
 
 }
